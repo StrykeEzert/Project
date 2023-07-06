@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image:url(/img/ea8003eda835af024292148060887ed4.jpg) ;
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo img {
+  height: 45px;
+  width: 167px;
+}
+
+.clock #time {
+  padding: 20px;
+  z-index: 90;
+  position: relative;
+  max-width: 450px;
+  height: 550px;
+  margin-left: 50%;
+  background-color: rgb(0, 0, 0, 0.75);
+  border-radius: 10px;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+}
+
+.clock_box h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-top: 0;
+}
+
+#clock #time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+  
+#clock #time div{  
+    position:relative;
+    margin: -2px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+}
+#clock #time div span{
+  
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background-color: #0044ff;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+}
+
+#clock #time div span:nth-child(2){
+    height: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    box-shadow: none;
+    background: #1900ff;
+    text-transform: uppercase;
+    z-index: 9;
+}
+#clock #time div:last-child span{
+    background: #9600ff;
+    
+}
+#clock #time div:last-child span:nth-child(2){
+    background:#7b06ce;
+
+}
